@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="keywords"
+      content="gndstore, watch, women watch, online watches, man watch, stylish watch"
+    />
+    <meta
+      name="keywords"
+      content="online watch store, mens watch, womens watch,online watches"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="catalog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <title>G&DStore Products</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a onclick="redirectToRoot()"
+          ><img src="linkedin_banner_image_1.png" alt=""
+        /></a>
+
+        <h1 id="abbrev">G&D Store</h1>
+        <nav>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.location='homepage.html'"
+          >
+            <i class="fa fa-home"> Home</i>
+          </button>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.location='catalog.html'"
+          >
+            <i class="fa fa-product-hunt"> Products</i>
+          </button>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.location='contacts.html'"
+          >
+            <i class="fa fa-users"> Contacts</i>
+          </button>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.location=''"
+          >
+            <i class="fa fa-info-circle"> About</i>
+          </button>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.getElementById('login01').style.display='block'"
+            style="width: auto"
+          >
+            Login
+          </button>
+          <button
+            class="buttons"
+            onclick="document.getElementById('signup01').style.display='block'"
+            style="width: auto"
+          >
+            Sign Up
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="product-container">
+        <div class="product-item">
+          <img
+            src="Cuena_white_L.jpg"
+            onclick="showDescription('Cuena white L')"
+            class="image"
+            data-image-id="1"
+          />
+          <img
+            src="Cuena_white_S.jpg"
+            onclick="showDescription('Cuena white S')"
+            class="image"
+            data-image-id="2"
+          />
+          <img
+            src="lige.jpg"
+            onclick="showDescription('Lige')"
+            class="image"
+            data-image-id="3"
+          />
+          <img
+            src="Lige_Watch_Man_black.jpg"
+            onclick="showDescription('Lige Watch Man Black')"
+            class="image"
+            data-image-id="4"
+          />
+        </div>
+      </div>
+      <div class="popup-panel" id="popup-panel">
+        <p class="description" id="popup-description"></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&reg; G&D Store</p>
+      <p>
+        <a href="contacts.html" title="image" target="_blank"
+          >Please contact us for any questions about these products.</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
+<script>
+  function showDescription(description) {
+    var popupDescription = document.getElementById("popup-description");
+    popupDescription.innerHTML = description;
+    var popupPanel = document.getElementById("popup-panel");
+    popupPanel.style.display = "block";
+  }
+
+  function hideDescription() {
+    var popupPanel = document.getElementById("popup-panel");
+    popupPanel.style.display = "none";
+  }
+</script>

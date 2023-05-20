@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="keywords"
+      content="gndstore, watch, women watch, online watches, man watch, stylish watch"
+    />
+    <meta
+      name="keywords"
+      content="online watch store, mens watch, womens watch,online watches"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contactstyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    `
+    <title>G&DStore Contacts</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a onclick="redirectToRoot()"
+          ><img src="linkedin_banner_image_1.png" alt=""
+        /></a>
+        <h1 id="abbrev">G&D Store</h1>
+        <nav>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.location='homepage.html'"
+          >
+            <i class="fa fa-home"> Home</i>
+          </button>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.location='catalog.html'"
+          >
+            <i class="fa fa-product-hunt"> Products</i>
+          </button>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.location='contacts.html'"
+          >
+            <i class="fa fa-users"> Contacts</i>
+          </button>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.location=''"
+          >
+            <i class="fa fa-info-circle"> About</i>
+          </button>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.getElementById('login01').style.display='block'"
+            style="width: auto"
+          >
+            Login
+          </button>
+          <button
+            class="buttons"
+            onclick="document.getElementById('signup01').style.display='block'"
+            style="width: auto"
+          >
+            Sign Up
+          </button>
+        </nav>
+      </div>
+      <div id="signup01" class="modal">
+        <span
+          onclick="document.getElementById('signup01').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >&times;</span
+        >
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h1>Sign Up</h1>
+            <p><b>Please fill in this form to create an account.</b></p>
+            <hr />
+            <label for="text"><b>Username</b></label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="text"
+              required
+            />
+            <label for="email"><b>Email</b></label>
+            <input
+              type="email"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              name="psw-repeat"
+              required
+            />
+            <div class="clearfix">
+              <button
+                type="button"
+                onclick="document.getElementById('signup01').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <div class="cform">
+      <div class="contactform">
+        <form action="https://formsubmit.co/053147100af87f00c7d8c6a7dde610a5" method="post">
+          <h3>CONTACT WITH US</h3>
+
+          <div class="formbox">
+            <input
+              type="text"
+              name="First Name"
+              placeholder="Enter your First Name *"
+              required=""
+            />
+            <input
+              type="text"
+              name="Last Name"
+              placeholder="Enter your Last Name"
+            />
+            <input
+              type="email"
+              name="Email address"
+              placeholder="Enter your Email address *"
+              required=""
+            />
+            <input
+              type="text"
+              name="Phone Number"
+              placeholder="Enter your Phone Number *"
+              required=""
+            />
+            <textarea
+              name="Message"
+              rows="5"
+              placeholder="How can we help you?"
+              required=""
+            ></textarea>
+            <div class="center">
+              <button type="submit">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="info">
+        <h1>We are online store for women's and men's watches!</h1>
+        <p>
+          <i class="fa fa-envelope-open"></i> Emai:
+          <a href="mailto:support@gndstore.sytes.net" type="email"
+            >support@gndstore.sytes.net</a
+          >
+        </p>
+        <p>
+          <i class="fa fa-facebook-official"></i> Find us in Facebook:
+          <a href="https://www.facebook.com/storeGnD" target="_blank"
+            >GnD Store Facebook
+          </a>
+        </p>
+        <p>
+          <i class="fa fa-instagram"></i> Find us in Instagram:
+          <a href="https://www.instagram.com/gnd.store_/" target="_blank"
+            >GnD Store Instagram</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&reg; G&D Store</p>
+      <p>
+        <a href="contacts.html"
+          >Please contact us for any questions about these products.</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
+
+<script src="redirect.js"></script>

@@ -1,0 +1,294 @@
+html,
+body {
+  background-image: url(/scott-webb-UjupleczBOY-unsplash.jpg);
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Full-width input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+/* Add a background color when the inputs get focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.buttons,
+.cancelbtn,
+.signupbtn,
+.loginbtn {
+  background-color: #2e4a51;
+  font-size: large;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.7;
+}
+.buttons:hover {
+  background-color: #ac3535;
+}
+.signupbtn,
+.loginbtn {
+  background-color: #04aa6d;
+  font-size: medium;
+}
+/* .buttons:hover {
+  opacity: 1;
+} */
+
+.buttons:hover,
+.buttons:focus,
+.buttons:active,
+.loginbtn:hover,
+.loginbtn:focus,
+.loginbtn:active {
+  background: #f8f6f6;
+  color: #000;
+  transition: all 0.3s ease-in;
+  opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  font-size: medium;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container,
+.login-form {
+  padding: 16px;
+}
+.login-username,
+.login-password {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.loginbtn,
+.login-cancelbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.loginbtn:hover,
+.login-cancelbtn:hover {
+  opacity: 0.8;
+}
+
+.login-cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  header body footer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menuicon {
+    display: block;
+    cursor: pointer;
+  }
+}
+#abbrev {
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+  text-decoration: underline;
+  padding-left: 5px;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.header * {
+  display: inline;
+  vertical-align: middle;
+}
+
+.header img {
+  border-radius: 30px;
+}
+
+#title {
+  align-items: center;
+  font-size: 45px;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(24, 24, 24);
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.photo img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: skewY();
+  transform: scale(1.1);
+  object-fit: fill;
+  aspect-ratio: 0;
+  border-radius: 40%;
+  will-change: transform;
+}
+
+.animated-photo {
+  overflow: hidden;
+}
+.photo {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+img {
+  border-radius: 10px;
+}
+.photo:hover {
+  animation-play-state: paused;
+}
+.photo img {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+@keyframes marquee {
+  /* from {
+    transform:scaleX(-200%);
+  }
+  to {
+    transform: scaleX(200%);
+  } */
+  from {
+    transform: translateX(-2040px);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+.animated-photo img {
+  margin: 10px 10px;
+}
+
+footer {
+  color: #000000;
+  margin: 5px;
+  border-radius: 3px;
+  padding: 20px 20px;
+  border: 3px solid #2e4a51;
+}
+footer p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+footer p {
+  margin: 10px;
+}
+
+.contact-form form h3 {
+  font-weight: 600;
+}
+.contact-form {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .menuicon {
+    display: block;
+    cursor: pointer;
+  }
+}

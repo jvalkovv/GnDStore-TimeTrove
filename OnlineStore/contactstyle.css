@@ -1,0 +1,76 @@
+.cform {
+  margin-top: 1px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+
+}
+
+.contactform h3 {
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  font-style: oblique;
+  color: rgba(73, 255, 252, 1);
+}
+
+.contactform {
+  width: 45%;
+  display: flex;
+  justify-content: left;
+  padding-right: 5%;
+
+}
+
+.info {
+  padding-left: 5%;
+  width: 45%;
+}
+.info p {
+  font-weight: 500;
+  font-size: 25px;
+  color: rgb(23, 61, 174);
+}
+.info p a {
+font-weight: 600;
+  color: aqua
+}
+
+.contactform form input,
+.contactform form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: rgb(235, 238, 241);
+  font-size: 16px;
+  outline: none;
+}
+
+.contactform form textarea {
+  resize: none;
+  display: flex;
+  width: 100%;
+}
+
+.formbox .center button {
+  padding: 15px;
+  background-color: aqua;
+  color: black;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 110px;
+  margin: 20px auto;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+}
+
