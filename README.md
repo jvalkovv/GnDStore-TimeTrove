@@ -33,4 +33,3 @@ Thank you for visiting G&D Store!<br>
 #### For any questions or orders, please feel free to use the contact form on our website.<br>
 
 [![Webstore](web_example_1.jpg)](http://gndstore.sytes.net)
-ff
