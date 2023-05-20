@@ -1,1 +1,1 @@
-# GnDStore-TimeTrove
+# G&D Store-TimeTrove
