@@ -132,13 +132,18 @@
 
     <div class="cform">
       <div class="contactform">
-        <form action="https://formsubmit.co/053147100af87f00c7d8c6a7dde610a5" method="post">
+        <form
+          action="https://formsubmit.co/053147100af87f00c7d8c6a7dde610a5"
+          method="post"
+        >
           <h3>CONTACT WITH US</h3>
 
           <div class="formbox">
+            <label for="fname">Required *</label>
             <input
               type="text"
-              name="First Name"
+              name="fname"
+              id="fname"
               placeholder="Enter your First Name *"
               required=""
             />
@@ -147,19 +152,28 @@
               name="Last Name"
               placeholder="Enter your Last Name"
             />
+            <label for="email">Required *</label>
             <input
               type="email"
-              name="Email address"
+              name="email"
+              id="email"
               placeholder="Enter your Email address *"
               required=""
             />
+            <label for="phone">Input format: 0123456789</label>
             <input
-              type="text"
-              name="Phone Number"
+              type="tel"
+              id="phone"
+              name="phone"
+              minlength="10"
+              maxlength="10"
+              pattern="[0-9]{10}"
               placeholder="Enter your Phone Number *"
               required=""
             />
+            <label for="Message">Required *</label>
             <textarea
+              id="Message"
               name="Message"
               rows="5"
               placeholder="How can we help you?"
