@@ -163,6 +163,7 @@ body {
   cursor: pointer;
 }
 
+
 footer {
   color: #000000;
   margin: 5px;
@@ -179,6 +180,8 @@ footer p {
 footer p {
   margin: 10px;
 }
+
+
 
 @media (max-width: 300px) {
   .cancelbtn,
