@@ -39,18 +39,14 @@
 }
 
 .google-map {
-  padding-bottom: 60%;
+  border: 5px double blue;
   display: flex;
   position: relative;
   left: -3%;
-  
 }
 
 .google-map iframe {
-  position: absolute;
-  left: 1%;
-  width: 100%;
-  height: 60%;
+    flex: 1 1 100%;
 }
 .contactform form input,
 .contactform form textarea {
@@ -83,7 +79,18 @@
 }
 @media (max-width: 375px) {
   body,
-  .google-map {
+  .google-map, .google-map iframe{
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  footer{
+    width: 93%;
+  }
+}
+@media (max-width: 375px) {
+  .cform{
     width: 100%;
   }
 }
