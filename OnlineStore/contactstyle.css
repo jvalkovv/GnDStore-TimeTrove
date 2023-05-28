@@ -46,7 +46,7 @@
 }
 
 .google-map iframe {
-    flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 .contactform form input,
 .contactform form textarea {
@@ -79,18 +79,50 @@
 }
 @media (max-width: 375px) {
   body,
-  .google-map, .google-map iframe{
-    width: 100%;
+  .google-map,
+  .google-map iframe {
+    width: 97%;
   }
 }
 
 @media (max-width: 375px) {
-  footer{
-    width: 93%;
+  footer {
+    width: 95%;
   }
 }
 @media (max-width: 375px) {
-  .cform{
+  .header nav {
+    font-size: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .info {
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .contactform h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .formbox #fname,
+  .formbox #lname,
+  .formbox #email,
+  .formbox #phone {
     width: 100%;
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .info p {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .info #email {
+    width: 100%;
+    font-size: 12px;
   }
 }
