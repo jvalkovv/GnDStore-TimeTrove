@@ -107,18 +107,27 @@ body {
 
 .product-container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .product-item {
-  margin-right: 10px;
+
+  margin-right: 1%;
 }
 
 .image {
   width: 300px;
   height: auto;
   cursor: pointer;
+  border: 2px solid black;
+  box-shadow: 0 0 20px;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
 .modal {
@@ -163,7 +172,6 @@ body {
   cursor: pointer;
 }
 
-
 footer {
   color: #000000;
   margin: 5px;
@@ -180,8 +188,6 @@ footer p {
 footer p {
   margin: 10px;
 }
-
-
 
 @media (max-width: 300px) {
   .cancelbtn,
