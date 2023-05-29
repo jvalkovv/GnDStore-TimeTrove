@@ -21,20 +21,20 @@
     <title>G&DStore Products</title>
     <script>
       function showModal(description, price) {
-        var modal = document.getElementById('modal');
-        var modalContent = document.getElementById('modal-content');
-        var descriptionElement = modalContent.querySelector('.description');
-        var priceElement = modalContent.querySelector('.price');
-         
+        var modal = document.getElementById("modal");
+        var modalContent = document.getElementById("modal-content");
+        var descriptionElement = modalContent.querySelector(".description");
+        var priceElement = modalContent.querySelector(".price");
+
         descriptionElement.textContent = description;
-        priceElement.textContent = 'Цена: ' + price;
-  
-        modal.style.display = 'block';
+        priceElement.textContent = "Цена: " + price;
+
+        modal.style.display = "block";
       }
-  
+
       function closeModal() {
-        var modal = document.getElementById('modal');
-        modal.style.display = 'none';
+        var modal = document.getElementById("modal");
+        modal.style.display = "none";
       }
     </script>
   </head>
@@ -128,7 +128,7 @@
           />
         </div>
       </div>
-    
+
       <!-- Модален прозорец -->
       <div id="modal" class="modal">
         <div id="modal-content" class="modal-content">
