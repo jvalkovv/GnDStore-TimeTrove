@@ -126,7 +126,7 @@ body {
   box-shadow: 0 0 30px;
 }
 
-.modal {
+.modal-info {
   display: none;
   position: fixed;
   z-index: 9999;
@@ -138,7 +138,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
+.modal-info-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,11 +153,11 @@ body {
   margin: 0 auto;
 }
 
-.modal h3 {
+.modal-info h3 {
   margin-top: 0;
 }
 
-.modal p {
+.modal-info p {
   margin-bottom: 0;
 }
 

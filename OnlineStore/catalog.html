@@ -13,16 +13,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="catalog.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="icon" href="favicon.png" type="image/x-icon" />
     <title>G&DStore Products</title>
+    <script src="redirect.js"></script>
+    <script src="modal.js"></script>
     <script>
       function showModal(description, price) {
-        var modal = document.getElementById("modal");
-        var modalContent = document.getElementById("modal-content");
+        var modal = document.getElementById("modal-info");
+        var modalContent = document.getElementById("modal-info-content");
         var descriptionElement = modalContent.querySelector(".description");
         var priceElement = modalContent.querySelector(".price");
         descriptionElement.textContent = description;
@@ -32,7 +35,7 @@
       }
 
       function closeModal() {
-        var modal = document.getElementById("modal");
+        var modal = document.getElementById("modal-info");
         modal.style.display = "none";
       }
     </script>
@@ -91,6 +94,59 @@
           </button>
         </nav>
       </div>
+      <div id="signup01" class="modal">
+        <span
+          onclick="document.getElementById('signup01').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >&times;</span
+        >
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h1>Sign Up</h1>
+            <p><b>Please fill in this form to create an account.</b></p>
+            <hr />
+            <label for="text"><b>Username</b></label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="text"
+              required
+            />
+            <label for="email"><b>Email</b></label>
+            <input
+              type="email"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input
+              type="password"
+              placeholder="Repeat Password"
+              name="psw-repeat"
+              required
+            />
+            <div class="clearfix">
+              <button
+                type="button"
+                onclick="document.getElementById('signup01').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </header>
     <main>
       <div class="product-container">
@@ -138,16 +194,65 @@
         <div class="product-item">
           <img
             src="DK_101_black.jpg"
-            onclick="showModal('Women Black Stylish Watch', '$XX.XX')"
+            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
             class="image"
             data-image-id="6"
+          />
+        </div>
+        <div class="product-item">
+          <img
+            src="black_women_square_quartz_watch.jpeg"
+            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            class="image"
+            data-image-id="7"
+          />
+        </div>
+        <div class="product-item">
+          <img
+            src="white_women_square_quartz_watch.jpeg"
+            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            class="image"
+            data-image-id="8"
+          />
+        </div>
+        <div class="product-item">
+          <img
+            src="women_black_notes_watch.jpg"
+            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            class="image"
+            data-image-id="9"
+          />
+        </div>
+        <div class="product-item">
+          <img
+            src="women_black_bracelet_leaf_watch.jpg"
+            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            class="image"
+            data-image-id="10"
+          />
+        </div>
+        <div class="product-item">
+          <img
+            src="women_white_bracelet_leaf_watch.jpg"
+            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            class="image"
+            data-image-id="11"
+          />
+        </div>
+        <div class="product-item">
+          <img
+            src="women_white_notes_watch.jpg"
+            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            class="image"
+            data-image-id="12"
           />
         </div>
       </div>
 
       <!-- Модален прозорец -->
-      <div id="modal" class="modal">
-        <div id="modal-content" class="modal-content">
+
+      <div id="modal-info" class="modal-info">
+        <div id="modal-info-content" class="modal-info-content">
           <span class="close-btn" onclick="closeModal()">&times;</span>
           <h3 class="description"></h3>
           <p class="price"></p>
