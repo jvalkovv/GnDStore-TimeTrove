@@ -22,23 +22,7 @@
     <title>G&DStore Products</title>
     <script src="redirect.js"></script>
     <script src="modal.js"></script>
-    <script>
-      function showModal(description, price) {
-        var modal = document.getElementById("modal-info");
-        var modalContent = document.getElementById("modal-info-content");
-        var descriptionElement = modalContent.querySelector(".description");
-        var priceElement = modalContent.querySelector(".price");
-        descriptionElement.textContent = description;
-        priceElement.textContent = "Цена: " + price;
-
-        modal.style.display = "block";
-      }
-
-      function closeModal() {
-        var modal = document.getElementById("modal-info");
-        modal.style.display = "none";
-      }
-    </script>
+    <script src="productModal.js"></script>
   </head>
   <body>
     <header>
@@ -153,7 +137,7 @@
         <div class="product-item">
           <img
             src="Cuena_white_Leather.jpg"
-            onclick="showModal('Cuena Watch White Leather', '20.00 лв.')"
+            onclick="showModal('CUENA Leather Watch','', '20.00 лв.',event)"
             class="image"
             data-image-id="1"
           />
@@ -161,7 +145,7 @@
         <div class="product-item">
           <img
             src="Cuena_white_S.jpg"
-            onclick="showModal('Cuena Watch Stainless Silver', '30.00 лв.')"
+            onclick="showModal('Cuena Watch Stainless Silver','', '30.00 лв.',event)"
             class="image"
             data-image-id="2"
           />
@@ -169,7 +153,7 @@
         <div class="product-item">
           <img
             src="DK_101_pink.jpg"
-            onclick="showModal('Women Pink Stylish Watch', '15.00 лв.')"
+            onclick="showModal('Women Pink Stylish Watch','', '15.00 лв.',event)"
             class="image"
             data-image-id="5"
           />
@@ -177,7 +161,7 @@
         <div class="product-item">
           <img
             src="lige.jpg"
-            onclick="showModal('Lige Watch Stainless Silver', '79.00 лв.')"
+            onclick="showModal('Lige Watch Stainless Silver','', '79.00 лв.',event)"
             class="image"
             data-image-id="3"
           />
@@ -185,7 +169,7 @@
         <div class="product-item">
           <img
             src="Lige_Watch_Man_black.jpg"
-            onclick="showModal('Lige Watch Stainless Black', '79.00 лв.')"
+            onclick="showModal('Lige Watch Stainless Black','', '79.00 лв.',event)"
             class="image"
             data-image-id="4"
           />
@@ -194,7 +178,7 @@
         <div class="product-item">
           <img
             src="DK_101_black.jpg"
-            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            onclick="showModal('Women Black Stylish Watch','', '15.00 лв.',event)"
             class="image"
             data-image-id="6"
           />
@@ -202,7 +186,7 @@
         <div class="product-item">
           <img
             src="black_women_square_quartz_watch.jpeg"
-            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            onclick="showModal('Women Black Stylish Watch','', '15.00 лв.',event)"
             class="image"
             data-image-id="7"
           />
@@ -210,7 +194,7 @@
         <div class="product-item">
           <img
             src="white_women_square_quartz_watch.jpeg"
-            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            onclick="showModal('Women Black Stylish Watch','', '15.00 лв.',event)"
             class="image"
             data-image-id="8"
           />
@@ -218,7 +202,7 @@
         <div class="product-item">
           <img
             src="women_black_notes_watch.jpg"
-            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            onclick="showModal('Women Black Stylish Watch', '','15.00 лв.',event)"
             class="image"
             data-image-id="9"
           />
@@ -226,7 +210,7 @@
         <div class="product-item">
           <img
             src="women_black_bracelet_leaf_watch.jpg"
-            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            onclick="showModal('Women Black Stylish Watch','', '15.00 лв.',event)"
             class="image"
             data-image-id="10"
           />
@@ -234,7 +218,7 @@
         <div class="product-item">
           <img
             src="women_white_bracelet_leaf_watch.jpg"
-            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            onclick="showModal('Women Black Stylish Watch','', '15.00 лв.',event)"
             class="image"
             data-image-id="11"
           />
@@ -242,7 +226,7 @@
         <div class="product-item">
           <img
             src="women_white_notes_watch.jpg"
-            onclick="showModal('Women Black Stylish Watch', '15.00 лв.')"
+            onclick="showModal('Women Black Stylish Watch', '','15.00 лв.',event)"
             class="image"
             data-image-id="12"
           />
@@ -254,7 +238,8 @@
       <div id="modal-info" class="modal-info">
         <div id="modal-info-content" class="modal-info-content">
           <span class="close-btn" onclick="closeModal()">&times;</span>
-          <h3 class="description"></h3>
+          <h3 class="productName"></h3>
+          <h4 class="productModel"></h4>
           <p class="price"></p>
         </div>
       </div>
