@@ -121,15 +121,14 @@ body {
   width: 300px;
   height: auto;
   cursor: pointer;
-  color: white;
-  background-color: white;
-  box-shadow: 0 0 30px;
   border: 5px solid whitesmoke;
+  box-shadow: 0 0 30px #3d6974e4;
 }
 .selected-image {
-  border: 8px solid rgb(242, 92, 92) !important;
+  border: 8px solid rgba(242, 127, 127, 0.848) !important;
+  color: whitesmoke;
   border-radius: 30px;
-  box-shadow: 0 0 50px;
+  box-shadow: 0 0 100px #3d6974e4;
 }
 .modal-info {
   display: none;
@@ -140,7 +139,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.12);
 }
 
 .modal-info-content {
@@ -158,7 +157,12 @@ body {
   max-width: 90%;
   margin: 0 auto;
 }
-
+.modal-info-content p a {
+  font-weight: 600;
+}
+.modal-info-content p {
+  font-size: 20px;
+}
 .modal-info h3 {
   margin-top: 0;
 }
