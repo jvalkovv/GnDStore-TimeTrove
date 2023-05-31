@@ -116,16 +116,21 @@ body {
   margin-left: 10%;
   margin-right: 10%;
 }
+
 .image {
   width: 300px;
   height: auto;
   cursor: pointer;
-  border: 5px solid whitesmoke;
   color: white;
   background-color: white;
   box-shadow: 0 0 30px;
+  border: 5px solid whitesmoke;
 }
-
+.selected-image {
+  border: 8px solid rgb(242, 92, 92) !important;
+  border-radius: 30px;
+  box-shadow: 0 0 50px;
+}
 .modal-info {
   display: none;
   position: fixed;
@@ -139,6 +144,7 @@ body {
 }
 
 .modal-info-content {
+  border: 10px solid rgba(143, 209, 218, 0.905);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,9 +152,9 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #fff;
+  background-color: rgba(211, 229, 232, 0.868);
   padding: 20px;
-  width: 400px;
+  width: 500px;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -164,8 +170,10 @@ body {
 .close-btn {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
   cursor: pointer;
+  font-size: 50px;
+  color: red;
 }
 
 footer {
