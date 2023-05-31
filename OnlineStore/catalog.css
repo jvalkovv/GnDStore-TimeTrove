@@ -225,3 +225,25 @@ footer p {
     padding-top: 20px;
   }
 }
+@media (max-width: 400px) {
+  .modal-info {
+    width: 100%;
+  }
+  .modal-info img {
+    width: 100%;
+  }
+  .modal-info h2,
+  .modal-info h4,
+  .modal-info h3 {
+    font-size: large;
+    text-align: center;
+  }
+  .modal-info p {
+    font-size: large;
+    text-align: center;
+  }
+  .modal-info span {
+    top: -19px;
+    right: -3px;
+  }
+}
