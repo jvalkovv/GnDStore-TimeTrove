@@ -9,18 +9,18 @@ function showModal(productName, productModel, price, event) {
   productModels.textContent = "Model: " + productModel;
 
   var selectedImage = event.currentTarget;
+  var currentSelectedImage = document.getElementById("selected-image");
+  currentSelectedImage.src = selectedImage.src;
+  
   var isSelected = selectedImage.classList.contains("selected-image");
-
-  // Премахваме класа "selected-image" от всички снимки
+  
   var images = document.querySelectorAll(".image");
   images.forEach(function (image) {
     image.classList.remove("selected-image");
   });
 
-  // Добавяме класа "selected-image" на избраната снимка
   if (!isSelected) {
     selectedImage.classList.add("selected-image");
-    // Добавяме класа "no-scroll" на страницата
   }
   modal.style.display = "block";
   document.documentElement.style.overflow = "hidden";
@@ -38,7 +38,7 @@ function closeModal() {
 
   if (selectedImage) {
     selectedImage.classList.remove("selected-image");
-    selectedImage.style.border = "none";
+    selectedImage.classList.add("image");
   }
   document.documentElement.style.overflow = "auto";
 }
