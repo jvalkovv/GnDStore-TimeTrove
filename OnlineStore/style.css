@@ -267,26 +267,26 @@ footer p {
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
-@media (max-width: 300px) {
+@media (max-width: 300px) or (max-width: 420px) {
   .cancelbtn,
   .signupbtn {
     width: 100%;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375px) or (max-width: 420px) {
   header .buttons {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) or (max-width: 420px) {
   .menuicon {
     display: block;
     cursor: pointer;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 375px) or (max-width: 420px) {
   .header nav .buttons {
     font-size: 15px;
   }
