@@ -122,7 +122,7 @@ body {
   height: auto;
   cursor: pointer;
   border: 5px solid whitesmoke;
-  box-shadow: 0px 0px 45px 15px #3d6974e4;
+  box-shadow: 0px 0px 45px 20px #3d6974e4;
 }
 .selected-image {
   border: 8px solid rgba(242, 127, 127, 0.848) !important;
