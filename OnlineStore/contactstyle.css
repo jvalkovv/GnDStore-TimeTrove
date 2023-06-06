@@ -1,3 +1,6 @@
+html {
+  background-image: url(contacts_backgroundimage.jpg);
+}
 .cform {
   width: 95%;
   display: flex;
@@ -39,10 +42,9 @@
 }
 
 .google-map {
-  border: 5px double blue;
+  border: 3px double blue;
   display: flex;
   position: relative;
-  left: -3%;
 }
 
 .google-map iframe {

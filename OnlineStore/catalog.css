@@ -1,11 +1,11 @@
-html,
-body {
-  background-image: url(scott-webb-UjupleczBOY-unsplash.jpg);
+html {
+  background-image: url(products_backgroundimage.jpg);
 }
 .header * {
   display: inline;
   vertical-align: middle;
 }
+
 #abbrev {
   font-family: "Times New Roman", Times, serif;
   font-style: oblique;
@@ -116,17 +116,15 @@ body {
   margin-left: 10%;
   margin-right: 10%;
 }
-
 .image {
   width: 300px;
-  height: auto;
+  height: max-content;
   cursor: pointer;
-  border: 5px solid whitesmoke;
-  box-shadow: 0px 0px 45px 20px #3d6974e4;
+  box-shadow: 0px 0px 45px 20px #8fcbf35c;
 }
 .selected-image {
-  border: 8px solid rgba(242, 127, 127, 0.848) !important;
-  color: whitesmoke;
+  height: max-content;
+  border: 5px solid rgba(242, 127, 127, 0.848) !important;
   border-radius: 30px;
 }
 .modal-info {
@@ -142,7 +140,8 @@ body {
 }
 
 .modal-info-content {
-  border: 10px solid rgba(143, 209, 218, 0.905);
+  border: 10px solid #97d7f3;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +149,8 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(211, 229, 232, 0.868);
+  color: black;
+  background-color: #fffefe99;
   padding: 20px;
   width: 500px;
   max-width: 90%;
