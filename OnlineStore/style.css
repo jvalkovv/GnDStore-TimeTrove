@@ -235,11 +235,13 @@ img {
 }
 
 footer {
+  display: flex;
   color: #000000;
   margin: 5px;
   border-radius: 3px;
-  padding: 20px 20px;
+  padding: 5px 10px;
   border: 3px solid #2e4a51;
+  justify-content: space-between;
 }
 footer p {
   font-family: "Times New Roman", Times, serif;
@@ -247,10 +249,9 @@ footer p {
   font-style: italic;
 }
 
-footer p {
-  margin: 10px;
+.copy {
+  align-self: flex-end;
 }
-
 .contact-form form h3 {
   font-weight: 600;
 }
