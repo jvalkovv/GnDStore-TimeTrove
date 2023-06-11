@@ -1,4 +1,4 @@
-## G&D Store-TimeTrove - Watches Store
+## G&D Store TimeTrove - Watches Store
 
 ### Добре дошли в G&D Store!
 
