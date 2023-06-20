@@ -79,7 +79,7 @@ html {
   justify-content: center;
   display: flex;
 }
-@media (max-width: 375px) or (max-width: 420px) {
+@media (max-width: 375px), (max-width: 420px) {
   body,
   .google-map,
   .google-map iframe {
@@ -87,27 +87,27 @@ html {
   }
 }
 
-@media (max-width: 375px) or (max-width: 420px) {
+@media (max-width: 375px), (max-width: 420px) {
   footer {
     width: 95%;
   }
 }
-@media (max-width: 375px) or (max-width: 420px) {
+@media (max-width: 375px), (max-width: 420px) {
   .header nav {
     font-size: 15px;
   }
 }
-@media (max-width: 375px) or (max-width: 420px) {
+@media (max-width: 375px), (max-width: 420px) {
   .info {
     font-size: 10px;
   }
 }
-@media (max-width: 375px) or (max-width: 420px) {
+@media (max-width: 375px), (max-width: 420px) {
   .contactform h3 {
     font-size: 20px;
   }
 }
-@media (max-width: 375px) or (max-width: 420px) {
+@media (max-width: 375px), (max-width: 420px) {
   .formbox #fname,
   .formbox #lname,
   .formbox #email,
@@ -116,13 +116,13 @@ html {
     font-size: 10px;
   }
 }
-@media (max-width: 375px) or (max-width: 420px) {
+@media (max-width: 375px), (max-width: 420px) {
   .info p {
     width: 100%;
     font-size: 14px;
   }
 }
-@media (max-width: 375px) or (max-width: 420px) {
+@media (max-width: 375px), (max-width: 420px) {
   .info #email {
     width: 100%;
     font-size: 12px;
