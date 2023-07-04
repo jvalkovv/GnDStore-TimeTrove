@@ -1,5 +1,5 @@
 html {
-  background-image: url(products_backgroundimage.jpg);
+  background-image: url(contacts_backgroundimage.jpg);
 }
 .header * {
   display: inline;
@@ -130,13 +130,12 @@ html {
 .modal-info {
   display: none;
   position: fixed;
-  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-info-content {
@@ -150,7 +149,7 @@ html {
   top: 50%;
   transform: translateY(-50%);
   color: black;
-  background-color: #fffefe99;
+  background-color: rgba(201, 224, 255, 0.8);
   padding: 20px;
   width: 500px;
   max-width: 90%;

@@ -11,9 +11,9 @@ function showModal(productName, productModel, price, event) {
   var selectedImage = event.currentTarget;
   var currentSelectedImage = document.getElementById("selected-image");
   currentSelectedImage.src = selectedImage.src;
-  
+
   var isSelected = selectedImage.classList.contains("selected-image");
-  
+
   var images = document.querySelectorAll(".image");
   images.forEach(function (image) {
     image.classList.remove("selected-image");
