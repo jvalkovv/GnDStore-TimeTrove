@@ -23,7 +23,10 @@ html {
   display: flex;
   position: relative;
 }
-
+.contactform .star {
+  color: red;
+  font-size: 20px;
+}
 .info {
   padding-left: 5%;
   width: 55%;
@@ -79,6 +82,7 @@ html {
   justify-content: center;
   display: flex;
 }
+
 @media (max-width: 375px), (max-width: 420px) {
   body,
   .google-map,
