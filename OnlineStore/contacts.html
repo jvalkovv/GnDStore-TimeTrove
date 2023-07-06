@@ -96,11 +96,13 @@
               placeholder="Enter your First Name"
               required=""
             />
+            <label for="lname">Required</label><span class="star"> *</span>
             <input
               type="text"
               name="lname"
               id="lname"
               placeholder="Enter your Last Name"
+              required=""
             />
             <label for="email">Required</label><span class="star"> *</span>
             <input
@@ -112,8 +114,8 @@
             />
             <span>Required</span><span class="star"> *</span>
             <br />
-            <label for="phone">Example input format: +359 886792622</label>
-
+            <label for="phone">Example input format:</label>
+            <span class="phoneNumber">+359 886792622</span>
             <input
               type="text"
               id="phone"
@@ -124,12 +126,17 @@
               placeholder="Enter your Phone Number"
               required=""
             />
-            <label for="message">Required</label><span class="star"> *</span>
+            <label for="message">Required</label><span class="star"> *</span
+            ><span>Message section:</span>
+            <p>
+              За поръчка, моля въведете моделa, адресa за доставка и куриерската
+              фирма:
+            </p>
             <textarea
               id="message"
               name="message"
               rows="5"
-              placeholder="How can we help you?"
+              placeholder="How can we help you...?"
               required=""
             ></textarea>
             <div class="center">
@@ -148,8 +155,8 @@
         </p>
         <p>
           <i class="fab fa-facebook-square"></i> Find us in Facebook:
-          <a href="https://www.facebook.com/storeGnD" target="_blank"
-            >GnD Store Facebook
+          <a href="https://www.facebook.com/storeGnD" target="_blank">
+            GnD Store Facebook
           </a>
         </p>
         <p>

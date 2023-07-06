@@ -84,51 +84,59 @@ html {
 }
 
 @media (max-width: 375px), (max-width: 420px) {
-  body,
-  .google-map,
-  .google-map iframe {
-    width: 97%;
+  .cform {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 375px), (max-width: 420px) {
+  .formbox .phoneNumber {
+    display: inline-block;
+    width: 100%;
+  }
+}
+@media (max-width: 375px), (max-width: 420px) {
+  .contactform {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 
 @media (max-width: 375px), (max-width: 420px) {
-  footer {
-    width: 95%;
-  }
-}
-@media (max-width: 375px), (max-width: 420px) {
-  .header nav {
-    font-size: 15px;
-  }
-}
-@media (max-width: 375px), (max-width: 420px) {
   .info {
-    font-size: 10px;
-  }
-}
-@media (max-width: 375px), (max-width: 420px) {
-  .contactform h3 {
-    font-size: 20px;
-  }
-}
-@media (max-width: 375px), (max-width: 420px) {
-  .formbox #fname,
-  .formbox #lname,
-  .formbox #email,
-  .formbox #phone {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    font-size: 10px;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 375px), (max-width: 420px) {
+  .info h1 {
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
   }
 }
 @media (max-width: 375px), (max-width: 420px) {
   .info p {
     width: 100%;
-    font-size: 14px;
+    font-size: 20px;    
   }
 }
 @media (max-width: 375px), (max-width: 420px) {
-  .info #email {
+  .info p a {
+    display: inline-block;
+    width: 100%;   
+  }
+}
+@media (max-width: 375px), (max-width: 420px) {
+  .google-map {
     width: 100%;
-    font-size: 12px;
   }
 }
