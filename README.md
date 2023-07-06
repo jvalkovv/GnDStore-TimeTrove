@@ -32,4 +32,4 @@ simply click on the image below and open it in a new window. <br>
 
 #### For any questions or orders, please feel free to use the contact form on our website.<br>
 
-[![Webstore](web_example_1.jpg)](http://gndstore.sytes.net)
+[![Webstore]()](http://gndstore.sytes.net)
