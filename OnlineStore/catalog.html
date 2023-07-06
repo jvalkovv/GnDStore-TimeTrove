@@ -18,6 +18,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+        <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
     <link rel="icon" href="favicon.png" type="image/x-icon" />
     <title>G&DStore Products</title>
     <script src="redirect.js"></script>
@@ -32,7 +36,7 @@
         /></a>
 
         <h1 id="abbrev">G&D Store</h1>
-        <nav>
+        <nav class="header-button">
           <button
             class="buttons"
             style="width: auto"
@@ -45,7 +49,7 @@
             style="width: auto"
             onclick="document.location='catalog.html'"
           >
-            <i class="fa fa-product-hunt"> Products</i>
+            <i class="fab fa-product-hunt"> Products</i>
           </button>
           <button
             class="buttons"
@@ -54,82 +58,30 @@
           >
             <i class="fa fa-users"> Contacts</i>
           </button>
-          <!-- <button
-            class="buttons"
-            style="width: auto"
-            onclick="document.location=''"
-          >
-            <i class="fa fa-info-circle"> About</i>
-          </button>
-          <button
-            class="buttons"
-            style="width: auto"
-            onclick="document.getElementById('login01').style.display='block'"
-            style="width: auto"
-          >
-            Login
-          </button>
-          <button
-            class="buttons"
-            onclick="document.getElementById('signup01').style.display='block'"
-            style="width: auto"
-          >
-            Sign Up
-          </button> -->
         </nav>
-      </div>
-      <div id="signup01" class="modal">
-        <span
-          onclick="document.getElementById('signup01').style.display='none'"
-          class="close"
-          title="Close Modal"
-          >&times;</span
-        >
-        <form class="modal-content" action="/action_page.php">
-          <div class="container">
-            <h1>Sign Up</h1>
-            <p><b>Please fill in this form to create an account.</b></p>
-            <hr />
-            <label for="text"><b>Username</b></label>
-            <input
-              type="text"
-              placeholder="Enter Username"
-              name="text"
-              required
-            />
-            <label for="email"><b>Email</b></label>
-            <input
-              type="email"
-              placeholder="Enter Email"
-              name="email"
-              required
-            />
-            <label for="psw"><b>Password</b></label>
-            <input
-              type="password"
-              placeholder="Enter Password"
-              name="psw"
-              required
-            />
-            <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input
-              type="password"
-              placeholder="Repeat Password"
-              name="psw-repeat"
-              required
-            />
-            <div class="clearfix">
-              <button
-                type="button"
-                onclick="document.getElementById('signup01').style.display='none'"
-                class="cancelbtn"
-              >
-                Cancel
-              </button>
-              <button type="submit" class="signupbtn">Sign Up</button>
-            </div>
+        <nav class="phone-order">
+          <p>Поръчай по телефона:</p>
+          <div class="info">
+            <i
+              class="fas fa-phone-square-alt"
+              style="font-size: 38px; color: #40cf58"
+            ></i>
+            <i class="fab fa-viber" style="font-size: 32px; color: purple"></i>
+            <!-- <i
+                class="fab fa-whatsapp"
+                style="font-size: 34px; color: green"
+              ></i> -->
+            <span style="font-size: 24px">+359 886792622</span>
           </div>
-        </form>
+        </nav>
+        <nav class="social-network">
+          <i
+            class="fab fa-facebook-square"
+            style="font-size: 36px; color: blue"
+          ></i
+          >
+          <p style="font-size: 20px">Последвайте ни</p>
+        </nav>
       </div>
     </header>
     <main>
@@ -205,6 +157,7 @@
             onclick="showModal('Women Black Stylish Watch', 'DK1051B','25.00 лв.',event)"
             class="image"
             data-image-id="9"
+            data-url="homepage.html"
           />
         </div>
         <div class="product-item">
@@ -238,14 +191,14 @@
           <span class="close-btn" onclick="closeModal()">&times;</span>
           <img id="selected-image" src="" alt="Selected Image" />
           <h2 class="productName"></h2>
-          <h4 class="productModel"></h4>
-          <h2 class="price"></h2>
+          <h3 class="productModel"></h3>
+          <h3 class="price"></h3>
           <p>
             <a href="contacts.html" target="_blank"
               >For order please contact with us from contact form</a
             >
           </p>
-          <p>By writing the chosen model</p>
+          <p>By writing the chosen model into Message section</p>
         </div>
       </div>
     </main>

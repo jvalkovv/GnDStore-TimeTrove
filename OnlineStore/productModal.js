@@ -4,6 +4,7 @@ function showModal(productName, productModel, price, event) {
   var productNameElement = modalContent.querySelector(".productName");
   var priceElement = modalContent.querySelector(".price");
   var productModels = modalContent.querySelector(".productModel");
+  var targets = modalContent.querySelector(".target");
   productNameElement.textContent = productName;
   priceElement.textContent = "Price: " + price;
   productModels.textContent = "Model: " + productModel;
@@ -22,8 +23,10 @@ function showModal(productName, productModel, price, event) {
   if (!isSelected) {
     selectedImage.classList.add("selected-image");
   }
+
   modal.style.display = "block";
   document.documentElement.style.overflow = "hidden";
+
   modal.addEventListener("click", function (event) {
     if (event.target == modal) {
       closeModal();
