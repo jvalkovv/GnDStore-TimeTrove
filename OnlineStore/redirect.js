@@ -1,5 +1,3 @@
 function redirectToRoot() {
-  window.location.href = "http://gndstore.sytes.net/";
+  window.location.href = "http://gndstore.hopto.org";
 }
-
-

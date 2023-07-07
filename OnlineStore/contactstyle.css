@@ -108,7 +108,6 @@ html {
 
 @media (max-width: 375px), (max-width: 420px) {
   .info {
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
