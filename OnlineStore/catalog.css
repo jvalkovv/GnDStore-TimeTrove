@@ -1,5 +1,5 @@
 html {
-  background-image: url(contacts_backgroundimage.jpg);
+  background-image: url(/GnDStore-TimeTrove/media/contacts_backgroundimage.jpg);
 }
 .header * {
   display: inline;
@@ -105,15 +105,13 @@ footer p {
   margin: 10px;
 }
 
-
-@media (max-width: 375px) , (max-width: 420px) {
+@media (max-width: 375px), (max-width: 420px) {
   header body footer {
     width: 100%;
   }
 }
 
-
-@media (max-height: 375) , (max-width: 420px) {
+@media (max-height: 375), (max-width: 420px) {
   .sidenav {
     padding-top: 15px;
   }
@@ -121,12 +119,12 @@ footer p {
     font-size: 18px;
   }
 }
-@media (max-width: 375px) , (max-width: 420px) {
+@media (max-width: 375px), (max-width: 420px) {
   .product-container {
     padding-top: 20px;
   }
 }
-@media (max-width: 400px) , (max-width: 420px) {
+@media (max-width: 400px), (max-width: 420px) {
   .modal-info {
     width: 100%;
   }
