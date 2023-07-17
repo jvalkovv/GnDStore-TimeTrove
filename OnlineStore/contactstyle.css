@@ -33,7 +33,12 @@ html {
   height: 50%;
   left: 5%;
 }
-
+.info :nth-child(2),
+.info :nth-child(3) {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 .info p {
   font-weight: 500;
   font-size: 25px;
@@ -42,6 +47,7 @@ html {
 .info p a {
   font-weight: 600;
   color: rgb(12, 3, 138);
+  text-decoration: none;
 }
 
 .google-map {
@@ -137,5 +143,15 @@ html {
 @media (max-width: 375px), (max-width: 420px) {
   .google-map {
     width: 100%;
+  }
+}
+@media (max-width: 375px), (max-width: 420px), (max-width: 811px) {
+  footer {
+    margin-top: 5px;
+    width: 100%;
+  }
+  footer div {
+    padding: 10px;
+    text-align: center;
   }
 }
