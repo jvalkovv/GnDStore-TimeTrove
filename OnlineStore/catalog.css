@@ -1,11 +1,7 @@
-html {
-  background-image: url(media/contacts_backgroundimage.jpg);
-}
 .header * {
   display: inline;
   vertical-align: middle;
 }
-
 #abbrev {
   font-family: "Times New Roman", Times, serif;
   font-style: oblique;
@@ -36,7 +32,7 @@ html {
 }
 .selected-image {
   height: max-content;
-  border: 5px solid rgba(242, 127, 127, 0.848) !important;
+  border: 5px solid rgba(241, 5, 5, 0.848) !important;
   border-radius: 30px;
 }
 .modal-info {
@@ -51,7 +47,7 @@ html {
 }
 
 .modal-info-content {
-  border: 10px solid #97d7f3;
+  border: 10px solid rgba(229, 134, 147, 0.9);
   border-radius: 30px;
   display: flex;
   z-index: 999;
@@ -62,7 +58,7 @@ html {
   top: 50%;
   transform: translateY(-50%);
   color: black;
-  background-color: rgba(201, 224, 255, 0.8);
+  background-color: rgba(253, 201, 153, 0.8);
   padding: 20px;
   width: 500px;
   max-width: 90%;
@@ -144,5 +140,15 @@ footer p {
   .modal-info span {
     top: -19px;
     right: -3px;
+  }
+}
+@media (max-width: 375px), (max-width: 420px), (max-width: 811px) {
+  footer {
+    margin-top: 5px;
+    width: 100%;
+  }
+  footer div {
+    padding: 10px;
+    text-align: center;
   }
 }
