@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="contactstyle.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="canonical" href="https://gndstore.hopto.org/contacts" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -22,15 +23,14 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
+    <script src="./ads-script.js"></script>
     <link rel="icon" href="media/favicon.png" type="image/x-icon" />
     <title>G&DStore Contacts</title>
   </head>
   <body>
     <header>
       <div class="header">
-        <a onclick="redirectToRoot()"
-          ><img src="media/linkedin_banner_image_1.png" alt=""
-        /></a>
+        <img src="media/linkedin_banner_image_1.png" alt="" />
 
         <h1 id="abbrev">G&D Store</h1>
         <nav class="header-button">
@@ -82,10 +82,7 @@
     </header>
     <div class="cform">
       <div class="contactform">
-        <form
-          action="https://formsubmit.co/cdba1365612af1ed56ec42cf4e3533e0"
-          method="post"
-        >
+        <form action="https://formspree.io/f/xzblzdeo" method="POST">
           <h3>CONTACT WITH US</h3>
           <div class="formbox">
             <label for="fname">Required</label><span class="star"> *</span>
@@ -120,9 +117,9 @@
               type="text"
               id="phone"
               name="phone"
-              minlength="11"
-              maxlength="11"
-              pattern="[+]{1}[0-9]{10}"
+              minlength="13"
+              maxlength="13"
+              pattern="[+]{1}[0-9]{12}"
               placeholder="Enter your Phone Number"
               required=""
             />
@@ -198,5 +195,3 @@
     </footer>
   </body>
 </html>
-
-<script src="redirect.js"></script>

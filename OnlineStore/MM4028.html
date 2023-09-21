@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="gndstore, watch, women watch, online watches, man watch, stylish watch, varna, часовници, дамски и мъжки часовници, varna, chasovnici"
+    />
+    <meta
+      name="keywords"
+      content="online watch store, mens watch, womens watch,online watches, varna, часовници, дамски и мъжки часовници, varna, chasovnici"
+    />
+    <meta
+      name="keywords"
+      content="мъжки часовници, часовник, дамски часовници, часовници Варна, chasovnik, Varna,chasovnici,stylish watch"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="watches.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./ads-script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="icon" href="media/favicon.png" type="image/x-icon" />
+    <title>G&D MM4028 men watch</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="media/linkedin_banner_image_1.png" alt="" />
+        <h1 id="abbrev">G&D Store</h1>
+        <nav class="header-button">
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.location='homepage.html'"
+          >
+            <i class="fa fa-home"> Home</i>
+          </button>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.location='catalog.html'"
+          >
+            <i class="fab fa-product-hunt"> Products</i>
+          </button>
+          <button
+            class="buttons"
+            style="width: auto"
+            onclick="document.location='contacts.html'"
+          >
+            <i class="fa fa-users"> Contacts</i>
+          </button>
+        </nav>
+        <nav class="phone-order">
+          <p>Поръчай по телефона:</p>
+          <div class="info">
+            <i
+              class="fas fa-phone-square-alt"
+              style="font-size: 38px; color: #40cf58"
+            ></i>
+            <i class="fab fa-viber" style="font-size: 32px; color: purple"></i>
+            <span style="font-size: 24px">+359 886792622</span>
+          </div>
+        </nav>
+        <nav class="social-network">
+          <a style="text-decoration: none" href="contacts.html">
+            <i
+              class="fab fa-facebook-square"
+              style="font-size: 36px; color: blue"
+            ></i>
+            <p style="font-size: 20px">Последвайте ни</p></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="gallery">
+        <div class="product">
+          <div class="image-container">
+            <img src="media/MM4028.jpg" alt="Main Image" />
+          </div>
+          <div class="thumbnail-container">
+            <img src="media/MM4028.jpg" alt="Main Image" />
+            <img src="media/MM4028_1.jpg" alt="Thumbnail 1" />
+            <img src="media/MM4028_2.jpg" alt="Thumbnail 1" />
+          </div>
+          <div class="details">
+            <h2>Стилен мъжки часовник със стоманена верижка</h2>
+            <p>Модел: MM4028</p>
+            <p id="productPrice"></p>
+            <p>Описание на продукта:</p>
+            <ul>
+              <li>Стъкло с HARDLEX кристал</li>
+              <li>Календарен и хронографен механизъм.</li>
+              <li>Кварцов механизъм</li>
+              <li>Подарък луксозна кутия.</li>
+              <li>Подарък кърпичка за почистване с логото LIGE.</li>
+              <li>Накрайник за скъсяване на верижка.</li>
+            </ul>
+
+            <p id="delivery">
+              Цената на доставката се заплаща отделно и варира според тарифата
+              на куриерската фирма
+            </p>
+          </div>
+        </div>
+        <div class="cform">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xzblzdeo" method="POST">
+              <h3>Направи поръчка</h3>
+              <h2>Данни за доставка</h2>
+              <div class="formbox">
+                <label for="fname">Задължително</label
+                ><span class="star"> *</span>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="Въведете първо име"
+                  required=""
+                />
+                <label for="lname">Задължително</label
+                ><span class="star"> *</span>
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Въведете фамилия"
+                  required=""
+                />
+                <label for="email">Задължително</label
+                ><span class="star"> *</span>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Въведете email адрес"
+                  required=""
+                />
+                <span>Задължително</span><span class="star"> *</span>
+                <br />
+                <label for="phone">Пример:</label>
+                <span class="phoneNumber">+359886792622</span>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  minlength="13"
+                  maxlength="13"
+                  pattern="[+]{1}[0-9]{12}"
+                  placeholder="Въведете телефонен номер"
+                  required=""
+                />
+                <span>Модел на продукта</span>
+                <label for="model">Задължително</label
+                ><span class="star"> *</span>
+                <input
+                  type="text"
+                  name="model"
+                  id="model"
+                  required=""
+                  readonly
+                />
+                <label for="address">Задължително</label>
+                <span class="star"> *</span>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Въведете адрес за доставка"
+                  required=""
+                />
+                <label for="message">Задължително</label
+                ><span class="star"> *</span>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="За допълнителна информация относно доставката или въпроси, използвайте това поле..."
+                  required=""
+                ></textarea>
+                <div class="center">
+                  <button type="submit">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p>&reg; G&D Store</p>
+        <p>Your online store for watches</p>
+        <p>
+          <a href="contacts.html" title="image" target="_blank"
+            >Please contact us for any questions about these products.</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="gallery.js"></script>
+<script src="getProductPrice.js"></script>

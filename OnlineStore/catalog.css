@@ -63,6 +63,7 @@
   width: 500px;
   max-width: 90%;
   margin: 0 auto;
+  text-align: center;
 }
 .modal-info-content p a {
   font-weight: 600;
@@ -73,7 +74,9 @@
 .modal-info h3 {
   margin-top: 0;
 }
-
+.modal-info-content .target a {
+  text-decoration: none;
+}
 .modal-info p {
   margin-bottom: 0;
 }
@@ -107,7 +110,7 @@ footer p {
   }
 }
 
-@media (max-width: 375), (max-width: 420px) {
+@media (max-width: 375px), (max-width: 420px) {
   .sidenav {
     padding-top: 15px;
   }
@@ -132,6 +135,7 @@ footer p {
   .modal-info h3 {
     font-size: large;
     text-align: center;
+    padding: 5px;
   }
   .modal-info p {
     font-size: large;

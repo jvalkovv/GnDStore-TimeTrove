@@ -1,16 +1,20 @@
 function showModal(productName, productModel, price, event) {
-  var modal = document.getElementById("modal-info");
-  var modalContent = document.getElementById("modal-info-content");
-  var productNameElement = modalContent.querySelector(".productName");
-  var priceElement = modalContent.querySelector(".price");
-  var productModels = modalContent.querySelector(".productModel");
-  var targets = modalContent.querySelector(".target");
+  let modal = document.getElementById("modal-info");
+  let modalContent = document.getElementById("modal-info-content");
+  let productNameElement = modalContent.querySelector(".productName");
+  let priceElement = modalContent.querySelector(".price");
+  let productModels = modalContent.querySelector(".productModel");
+  let targetElement = modalContent.querySelector(".target");
   productNameElement.textContent = productName;
-  priceElement.textContent = "Price: " + price;
-  productModels.textContent = "Model: " + productModel;
-
-  var selectedImage = event.currentTarget;
-  var currentSelectedImage = document.getElementById("selected-image");
+  priceElement.textContent = "Цена: " + price;
+  localStorage.setItem("productPrice", price);
+  productModels.textContent = "Модел: " + productModel;
+  targetElement.innerHTML =
+    "<a href=" +
+    productModel +
+    ".html target='_blank'>За повече детайли кликнете тук</a>";
+  let selectedImage = event.currentTarget;
+  let currentSelectedImage = document.getElementById("selected-image");
   currentSelectedImage.src = selectedImage.src;
 
   var isSelected = selectedImage.classList.contains("selected-image");
