@@ -1,0 +1,6 @@
+[
+    {
+      "route": "/",
+      "serve": "/homepage.html"
+    }
+  ]
