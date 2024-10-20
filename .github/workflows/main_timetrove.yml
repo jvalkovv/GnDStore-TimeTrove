@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://index.docker.io/v1/
-        username: ${{ secrets.AzureAppService_ContainerUsername_ac69c0b447d34d698a6d80849d8f24b5 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_53611b8f73f6489abfc0a68ba2b57945 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_8226e558bf5b44da8650344d45e94350 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_581fc47bea4543a691b42653c1824dd3 }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_ac69c0b447d34d698a6d80849d8f24b5 }}/timetrove:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_8226e558bf5b44da8650344d45e94350 }}/timetrove:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'timetrove'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_ba5231330ad94631bf4109550404380b }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_ac69c0b447d34d698a6d80849d8f24b5 }}/timetrove:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_390b867bd74d4e0d91bfde6050deb534 }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_8226e558bf5b44da8650344d45e94350 }}/timetrove:${{ github.sha }}'
